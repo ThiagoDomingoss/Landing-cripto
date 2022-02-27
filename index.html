@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Investir Digital</title>
+
+</head>
+<body>
+    <div class="all">
+        <header class="topo">
+           <h1>Investir Digital</h1>
+        </header>
+        <main>
+            <h2 class="conteudo"><strong>Aprenda</strong> de forma descomplicada a <strong>investir</strong> de maneira inteligente em <strong>criptomoedas</strong>.</h2>
+            <h2>O mercado de investimento digital está transformando pequenos investidores em milionários!</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/A7BkUiZDfSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <div><a href="#" id="btn"><button type="submit">INSCREVER-SE</button></a></div>
+        
+        </main>
+        <footer>
+            <div class="foot">
+                <img id="perfil" src="./img/perfil.png" alt="">
+                <p>Marcos Oliveira, consultor de investimentos, com foco no mercado de criptoativos desde 2015, já carrega anos de experiêcia própria no mercado de criptomoedas e tirando ótimos rendimentos desse mercado que está se tornando um dos principais.</p>
+                <p class="p2">Autor do livro: <a href="#">Manual do Investidor Digital</a></p>
+                <ul id="social">
+                    <a href="#"><li><img src="./img/instagram.png" alt="instagram"></li></a>
+                    <a href="#"><li><img src="./img/linkedin.png" alt="linkedin"></li></a>
+                    <a href="#"><li><img src="./img/youtube.png" alt="youtube"></li></a>
+                </ul>
+            </div>
+        </footer>
+        
+    </div>
+    <div class="popup">
+        <div class="popup-content">
+            <img src="./img/close.png" alt="fechar" class="close">
+            <input type="name" placeholder="name">
+            <input type="email" placeholder="email">
+            <button id="sub" type="submit">ENVIAR</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "flex";
+        })
+        document.querySelector(".close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none";
+        })
+    </script>
+</body>
+</html>
